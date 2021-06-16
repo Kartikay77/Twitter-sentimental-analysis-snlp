@@ -1,1 +1,2 @@
-# Twitter-sentimental-analysis-snlp
+# SENTIMENT ANALYSIS OF TEXT EMOTION ON TWITTER
+ 
