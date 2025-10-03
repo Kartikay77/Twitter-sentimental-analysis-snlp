@@ -42,7 +42,7 @@ for x in ['stopwords','wordnet','omw-1.4','averaged_perceptron_tagger','vader_le
         nltk.download(x)
 PY
 ```
-🚀 Train & Evaluate
+## 🚀 Train & Evaluate
 Notebook
 Open and run:
 '18BCE2199_NLP_PROJECT_twitter_sentimental_analysis.ipynb'
@@ -55,14 +55,14 @@ Script (end-to-end)
 This trains with GridSearchCV, prints metrics, plots curves, and saves:
 'twitter_sentiment_pipeline.joblib'
 
-📈 Results (current run)
+## 📈 Results (current run)
 ROC-AUC (test): 0.889
 Best held-out accuracy: ~0.80 (Count n-grams + Linear SVM)
 
 ![a](https://github.com/Kartikay77/Twitter-sentimental-analysis-snlp/blob/main/SNLP1.png)
 ![b](https://github.com/Kartikay77/Twitter-sentimental-analysis-snlp/blob/main/SNLP2.png)
 
-🔮 Inference (CLI)
+## 🔮 Inference (CLI)
 After a run has produced twitter_sentiment_pipeline.joblib:
 
 python predict.py --model twitter_sentiment_pipeline.joblib \
@@ -73,18 +73,20 @@ Example output:
 [happiness] I am very happy today! The atmosphere looks cheerful
 [sadness]   This is quite depressing. I am filled with sorrow
 
-🧰 Tech Stack
+## 🧰 Tech Stack
 Python, pandas, NumPy, matplotlib, scikit-learn, NLTK, emoji, contractions, joblib
 
-🧪 Baseline (optional)
+## 🧪 Baseline (optional)
 Compare against VADER to show lift:
 python baseline_vader.py
 prints baseline accuracy and macro-F1 on happiness/sadness
 
 
-⚖️ Notes & Ethics
+## ⚖️ Notes & Ethics
 Tweets can be noisy/biased; this model is for educational/demo purposes, not high-stakes decisions.
-📜 License
+
+
+## 📜 License
 Add a LICENSE file (e.g., MIT).
 MARKDOWN
 --- requirements.txt ---
