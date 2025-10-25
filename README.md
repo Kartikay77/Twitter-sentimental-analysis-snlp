@@ -62,6 +62,26 @@ Best held-out accuracy: ~0.80 (Count n-grams + Linear SVM)
 ![a](https://github.com/Kartikay77/Twitter-sentimental-analysis-snlp/blob/main/SNLP1.png)
 ![b](https://github.com/Kartikay77/Twitter-sentimental-analysis-snlp/blob/main/SNLP2.png)
 
+## 📈 Results (final)
+| Model | Accuracy | Precision | Recall | F1-Score |
+|:--|:--:|:--:|:--:|:--:|
+| **SVM (Count Vector)** | 0.789 | 0.789 | 0.789 | 0.789 |
+| **Ensemble (Top-4 Count Vector)** | 0.788 | 0.789 | 0.788 | 0.788 |
+| **Logistic Regression (Count Vector)** | 0.784 | 0.784 | 0.784 | 0.784 |
+| **Random Forest (Count Vector)** | 0.770 | 0.770 | 0.770 | 0.770 |
+| **Naive Bayes (Count Vector)** | 0.768 | 0.769 | 0.768 | 0.768 |
+
+Confusion Matrix (Ensemble):  
+[[1065 238]
+[ 312 979]]
+
+
+**Macro F1 ≈ 0.79 / Accuracy ≈ 0.79**  
+Balanced performance across both *happiness* and *sadness* classes.
+
+**Clarify the Ensemble**
+Top-4 Voting Ensemble combines SVM, Logistic Regression, Random Forest, and Naive Bayes Count-Vector models for more robust mood classification (macro F1 ≈ 0.79).
+
 ## 🔮 Inference (CLI)
 After a run has produced twitter_sentiment_pipeline.joblib:
 
